@@ -1,0 +1,402 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Page One Styles */
+.container.page-one {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header img {
+    height: 80px;
+    /* Increased size */
+}
+
+.date {
+    font-size: 16px;
+    /* Increased font size */
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    /* Increased font size */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 20px;
+    font-size: 16px;
+    /* Increased font size */
+}
+
+.section h3 {
+    font-size: 20px;
+    /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Page Two Styles */
+.container.page-two {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    /* border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.title {
+    font-size: 28px;
+    /* Increased font size */
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    /* Increased font size */
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    /* Increased padding */
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Fees Section */
+.fees-section {
+    margin-top: 20px;
+    font-size: 16px;
+    /* Increased font size */
+}
+
+/* Page Three Styles */
+.container.page-three {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    /* border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 16px;
+    /* Increased font size */
+}
+
+.payment-table th,
+.payment-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    /* Increased padding */
+    text-align: center;
+}
+
+.payment-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+/* Terms and Conditions Section */
+.terms-section {
+    font-size: 16px;
+    /* Increased font size */
+}
+
+/* Page Four Styles */
+.container.page-four {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    /* border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    font-family: Arial, sans-serif;
+    /* Ensuring a clean font style */
+}
+
+.content {
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+.content h3 {
+    font-size: 20px;
+    /* Increased font size */
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    /* Changed from space-around to space-between */
+    padding: 20px 0;
+    /* Added padding for better spacing */
+    font-size: 14px;
+    /* Increased font size */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-container {
+    width: 40px;
+    /* Increased size */
+    height: 40px;
+    /* Increased size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(253, 216, 7);
+    /* Default background color */
+}
+
+.icon-container:nth-child(2) {
+    background-color: rgb(0, 123, 255);
+    /* Background color of the middle icon */
+}
+
+.icon-container i {
+    color: white;
+    /* Icon color */
+    font-size: 24px;
+    /* Adjust icon size */
+}
+
+.icon-container img {
+    width: 24px;
+    /* Increased size */
+    height: 24px;
+    /* Increased size */
+}
+
+.stamp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Aligns everything to the right */
+    margin-top: 20px;
+}
+
+.sincerely {
+    text-align: right;
+    margin-bottom: 10px;
+    /* Space between "Sincerely" and the stamp */
+    font-weight: bold;
+    /* Optional: Makes "Sincerely" more prominent */
+}
+
+.stamp-image {
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+    /* Maintains aspect ratio */
+    margin-bottom: 10px;
+    /* Space between the stamp and the text */
+}
+
+.signature {
+    text-align: right;
+    /* Aligns the text to the right */
+    font-size: 14px;
+    /* Adjust font size if necessary */
+    line-height: 1.5;
+    /* Improves readability */
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #060606;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 14px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #CBA557;
+}
+
+
+
+.icon-container i {
+    color: white;
+    font-size: 14px;
+}
+
+.contact-text p {
+    margin: 0;
+    font-size: 9px;
+    /* Increased font size for better readability */
+    font-weight: 500;
+}
+
+hr {
+    height: 3px;
+    /* Adjust thickness of the line */
+    background-color: #CBA557;
+    /* Same color as icons */
+    border: none;
+    margin: 0;
+}
+
+
+
+/* Form  */
+.quotation-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quotation-form input,
+.quotation-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.quotation-form button,
+.quotation-form a {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px; /* Uniform font size */
+    font-weight: 600; /* Uniform font weight */
+    text-align: center; /* Ensures text stays centered */
+    display: inline-block;
+}
+
+.quotation-form button:hover {
+    background-color: #218838;
+}
+
+.quotation-form a {
+    background-color: #ff2f2f;
+}
+
+.quotation-form a:hover {
+    background-color: #cc2626;
+}
+
+/* New styles for button alignment */
+.button-group {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Distribute buttons */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.button-group button,
+.button-group a {
+    flex: 1; /* Make buttons equal in size */
+    text-align: center;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 10px; /* Smaller gap between buttons */
+    }
+
+    .quotation-form {
+        width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .quotation-form button,
+    .quotation-form a {
+        width: 100%; /* Make buttons take full width */
+        text-align: center; /* Center-align text inside buttons */
+        font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+}

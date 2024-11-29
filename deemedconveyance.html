@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal for  Deemed Conveyance</title>
+   
+<link rel="stylesheet" href="style.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="quotation-form" id="quotationForm">
+        <h2>Generate Quotation For  Deemed Conveyance</h2>
+        <form id="proposalForm">
+            <label for="societyName">Society Name:</label>
+            <input type="text" id="societyName" name="societyName" required><br><br>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="amount">Amount (Rs.) per flat:</label>
+            <input type="number" id="amount" name="amount" required><br><br>
+            
+            <div class="button-group">
+                <button type="button" onclick="generatePDF()">Generate Quotation</button>
+                <a href="index.html">Back</a>
+            </div>
+        </form>
+    </div>
+
+    <div id="proposalContent" style="display: none;">
+
+        <!-- page one -->
+        <div class="container page-one ">
+            <!-- Header Section -->
+            <div class="header">
+                <img src="/Assests/logo.png" alt="Deed Agents Logo">
+                <p>Date: <span id="proposalDate"></span></p>
+            </div>
+
+            <!-- Title -->
+            <div class="title">Proposal for  Deemed Conveyance</div>
+
+
+
+            <div class="section">
+                <h3>To,</h3>
+                <p>Chairman/Secretary,</p>
+                <p><strong><span id="societyNameDisplay1"></span><br><span id="locationDisplay1"></span></strong></p>
+                <br>
+                <p><strong>Subject:</strong>Deemed Conveyance of Co- Operative Housing Society/ transferring the Ownership of 
+                    the Property from the Seller to the Society.</p>    
+            </div>
+
+
+
+
+            <!-- Introduction Section -->
+            <div class="section">
+                <p><strong>Deed Agent Legal Consultancy</strong>  brings the knowhow for the formation, management, and 
+                    maintenance of co-operative housing societies. We are the unquestioned market leader, 
+                    providing innovative and pragmatic solutions to clients. We have worked closely with renowned 
+                    housing societies and established builders in Pune to provide a suite of best-in-class services, we 
+                    are the only end-to-end solution provider for all your society needs. 
+                    Our services portfolio and customized engagement models enable our customers to reduce cost 
+                    and save time by automating several legal and operational processes. We also work closely with 
+                    Co-operative sector officials to stay abreast of the latest government regulations.</p>
+            </div>
+
+            <!-- Advantages Section -->
+            <div class="section">
+                <h3>Advantages of Deemed Conveyance:</h3>
+                <ul>
+                    <li>Society will get Proper and Legal Title of the Property (Land & Structures) in the name of the
+                        Society on 7/12 (Satbara Extract)</li>
+                    <li>Society will retain Additional F.S.I granted by change of Development Regulations</li>
+                    <li>Society can get permission for reconstruction from the Planning Authorities</li>
+                    <li>Society can Redevelop the Property by constructing new building using TDR & Members can get the
+                        additional area (F.S.I), new amenities, etc.</li>
+                </ul>
+            </div>
+
+            <hr>
+            <div class="footer">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <!-- Phone Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+91 20 4847 5132</p>
+                            <p>+91 89 5615 0706</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>info@deedagents.com</p>
+                            <p>www.deedagents.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Office no 119, Vision Flora Mall,</p>
+                            <p>Pimple Saudagar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br> 
+
+        <!-- page two -->
+        <div class="container page-two">
+            <!-- Header -->
+            <div class="header">
+                <img src="/Assests/logo.png" alt="Deed Agents Logo">
+            </div>
+
+
+            <!-- Title -->
+            <div class="title">Working Schedule</div>
+             
+            <h3>1] Take Deemed Conveyance Order</h3>
+            <!-- Schedule Table -->
+            <table class="schedule-table">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Working Phase</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Online application fee deemed conveyance</td>
+                    <td>20 Days</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Physical file submission</td>
+                    <td>20 Days</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Physical file scrutiny</td>
+                    <td>20 Days</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Hearing</td>
+                    <td>210 Days</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>Deemed Conveyance final order</td>
+                    <td>30 Days</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th>300 Days</th>
+                </tr>
+            </table>
+
+            <h3>1] Stamp Duty Order</h3>
+            <!-- Schedule Table -->
+            <table class="schedule-table">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Working Phase</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Online</td>
+                    <td>20 Days</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Physical file submission</td>
+                    <td>20 Days</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Physical file scrutiny</td>
+                    <td>30 Days</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Valuation Order & Stamp Duty Challan</td>
+                    <td>80 Days</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>Stamp Duty Order</td>
+                    <td>30 Days</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th>180 Days</th>
+                </tr>
+            </table>
+        <br> 
+            <!-- Footer -->
+            <hr>
+            <div class="footer">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <!-- Phone Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+91 20 4847 5132</p>
+                            <p>+91 89 5615 0706</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>info@deedagents.com</p>
+                            <p>www.deedagents.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Office no 119, Vision Flora Mall,</p>
+                            <p>Pimple Saudagar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="container page-two">
+            <!-- Header -->
+            <div class="header">
+                <img src="Assests/logo.png" alt="Deed Agents Logo">
+            </div>
+
+              <br> <br>
+            <h3>1] DDR appoint letter</h3>
+            <!-- Schedule Table -->
+            <table class="schedule-table">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Working Phase</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>DDR Appointment letter</td>
+                    <td>15 Days</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th>300 Days</th>
+                </tr>
+            </table>
+              
+            <br><br> 
+            <h3>4] Sub Registrar Office (Deemed Conveyance Registration)</h3>
+            <!-- Schedule Table -->
+            <table class="schedule-table">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Working Phase</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Deemed Conveyance Registration </td>
+                    <td>1 Days</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th>1 Days</th>
+                </tr>
+            </table>
+           <br> <br> 
+           <div class="fees-section">
+            <div class="section-title"> <strong>Fees for All Work Procedure:</strong></div>
+            <br> 
+            <ul>
+                <li>
+                <strong>Rs <span id="amountDisplay"></span>/- Per Flat</strong>will be charged for complete procedure of Deemed 
+                conveyance of <strong><span id="societyNameDisplay2"></span></strong> <strong><span id="locationDisplay2"></span></strong>
+                </li>
+                <br>
+                <li>Government Charges (Na tax + stamp duty) will be other.</li>
+            </ul>
+        </div>
+        <br><br> <br> <br> 
+            <!-- Footer -->
+            <hr>
+            <div class="footer">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <!-- Phone Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+91 20 4847 5132</p>
+                            <p>+91 89 5615 0706</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>info@deedagents.com</p>
+                            <p>www.deedagents.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Office no 119, Vision Flora Mall,</p>
+                            <p>Pimple Saudagar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- page three -->
+        <div class="container page-three">
+            <!-- Header and other sections from previous code -->
+            <div class="header">
+                <img src="/Assests/logo.png" alt="Deed Agents Logo">
+            </div>
+            
+            <!-- Payment Schedule Title -->
+            <div class="title">Payment Schedule</div>
+
+            <!-- Payment Schedule Table -->
+            <table class="payment-table">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Working Process</th>
+                    <th>Payment</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Advance</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Physical File Submission</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1st Hearing of Deemed Conveyance</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Deemed Conveyance Registration</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th>100%</th>
+                </tr>
+            </table>
+            <br>
+            <!-- Terms and Conditions Section -->
+            <div class="terms-section">
+                <h3 class="section-title">Terms and Conditions:</h3>
+                <ul>
+                    <li>All payments should be made by cross cheque only.</li>
+                    <li>Cheque to be drawn on the name of <strong>Deed Agent</strong>.</li>
+                    <li>Government taxes and charges are not included above; those will be charged separately as
+                        required
+                        (Stamp duty, Registration fees, Balance FSI Challan, DHC challan).</li>
+                </ul>
+               
+                <br>
+                <h3 class="your-rights-section">Your Rights:</h3>
+                <ul class="your-rights-list">
+                    <li>FSI, Land acquisition, Common Rights, TDR, & etc</li>
+                </ul>
+
+                <div class="your-rights-section">In Your Case:</div>
+                <ul class="your-rights-list">
+                    <li>FSI and TDR points must be added into Draft.</li>
+                    <li>There must be a revised maintenance clause included in Draft.</li>
+                </ul>
+               
+            </div>
+            <div class="terms-section">
+                
+            </div>
+            <br> 
+            <!-- Footer -->
+            <hr>
+            <div class="footer">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <!-- Phone Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+91 20 4847 5132</p>
+                            <p>+91 89 5615 0706</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>info@deedagents.com</p>
+                            <p>www.deedagents.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Office no 119, Vision Flora Mall,</p>
+                            <p>Pimple Saudagar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page four -->
+        <div class="container page-four">
+            <!-- Header Section -->
+            <div class="header">
+                <img src="Assests/logo.png" alt="Deed Agents Logo">
+            </div>
+
+ <br><br>
+            <div class="terms-section">
+              
+
+                <div class="your-rights-section"> <strong>Town Planning Analysis Report:</strong></div>
+                <p>This analysis offers complete peace of mind by increasing the property value of your society.</p>
+            </div>
+
+
+            <!-- Content Section -->
+            <div class="content">
+                <ul>
+                    <li>Total consumed FSI.</li>
+                    <li>Total TDR.</li>
+                    <li>Land Rights. Total common Rights like Garden, Club House, etc.</li>
+                </ul>
+                <p>It helps to verify the pre-existing legal issues related to the property (7/12) & find out the right
+                    solutions.</p>
+                <div>
+                </div>
+                <br>
+                <h3>Documents required for Conveyance Deed</h3>
+
+                <ul>
+                    <li> <strong>Individual</strong>
+                        <ol>
+                            <li>Index 2</li>
+                            <li>Agreement to sell (1 Copy)</li>
+                        </ol>
+                    </li>
+                    <li><strong>Legal</strong>
+                        <ol>
+                            <li>7/12 Extract</li>
+                            <li>NA Order</li>
+                            <li>Old Search Report</li>
+                            <li>Development Agreement</li>
+                            <li>Power of Attorney</li>
+                        </ol>
+                    </li>
+                    
+                    <li><strong>Society (If Formation Done)</strong>
+                        <ol>
+                            <li>Society Registration Certificate</li>
+                            <li>Letter head (3 Copy)</li>
+                            <li>Society member list</li>
+                            <li>Resolution for Conveyance Deed</li>
+                        </ol>
+                    </li>
+                </ul>
+               <br> <br>  <br> 
+                <hr>
+                <div class="footer">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <!-- Phone Section -->
+                        <div class="contact-item">
+                            <div class="icon-container">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p>+91 20 4847 5132</p>
+                                <p>+91 89 5615 0706</p>
+                            </div>
+                        </div>
+    
+                        <!-- Email Section -->
+                        <div class="contact-item">
+                            <div class="icon-container">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p>info@deedagents.com</p>
+                                <p>www.deedagents.com</p>
+                            </div>
+                        </div>
+    
+                        <!-- Address Section -->
+                        <div class="contact-item">
+                            <div class="icon-container">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p>Office no 119, Vision Flora Mall,</p>
+                                <p>Pimple Saudagar, Pune</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <br><br><br>
+        <div class="container page-four">
+            <div class="header">
+                <img src="Assests/logo.png" alt="Deed Agents Logo">
+            </div>
+            <br><br> 
+            <div class="content">
+                <ul>
+                   
+                    <li><strong>Technical</strong>
+                        <ol>
+                            <li>Sanction Plan(Building)</li>
+                            <li>Completion Certificate</li>
+                            <li>Commencement Certificate</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <p>We recommend you to go through this proposal thoroughly, and in case of any doubts or clarifications
+                please
+                feel free to contact the undersigned.</p>
+
+                <br><br><br> <br><br> 
+                <div class="stamp-container">
+                    <p class="sincerely">Sincerely,</p>
+                    <img src="Assests/stamp.png" alt="Stamp" class="stamp-image">
+                    <div class="signature">
+                        <p>Mr. Pratik Suresh Pawar</p>
+                        <p>Sales Manager</p>
+                        <p>Deed Agent Legal Consultancy</p>
+                    </div>
+                </div>
+    
+                <br>
+                
+        <div style="height: 50px;"></div>
+            <!-- Footer Section -->
+            <hr>
+            <div class="footer">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <!-- Phone Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>+91 20 4847 5132</p>
+                            <p>+91 89 5615 0706</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>info@deedagents.com</p>
+                            <p>www.deedagents.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-text">
+                            <p>Office no 119, Vision Flora Mall,</p>
+                            <p>Pimple Saudagar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+<script>
+    function generatePDF() {
+    // Get form values
+    const societyName = document.getElementById('societyName').value;
+    const location = document.getElementById('location').value;
+    const dateInput = document.getElementById('date').value;
+    const amount = document.getElementById('amount').value;
+
+    // Validate input fields
+    if (!societyName || !location || !dateInput || !amount) {
+        alert("Please fill out all the fields!");
+        return;
+    }
+
+    // Format the date as dd/mm/yyyy
+    const dateParts = dateInput.split('-'); // Split yyyy-mm-dd
+    const formattedDate = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`; // Rearrange to dd/mm/yyyy
+
+    // Update printable content
+    document.getElementById('societyNameDisplay1').innerText = societyName;
+    document.getElementById('locationDisplay1').innerText = location;
+    document.getElementById('proposalDate').innerText = formattedDate; 
+    document.getElementById('societyNameDisplay2').innerText = societyName;
+    document.getElementById('locationDisplay2').innerText = location;
+    document.getElementById('amountDisplay').innerText = amount;
+
+    // Hide the form and show printable content
+    const formSection = document.getElementById('quotationForm');
+    const proposalContent = document.getElementById('proposalContent');
+    formSection.style.display = 'none';
+    proposalContent.style.display = 'block';
+
+    // Generate PDF using html2pdf.js
+    html2pdf().from(proposalContent).set({
+        margin:0.5,
+        filename: `${societyName}_DeemedCoveyance_Proposal.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    }).save().then(() => {
+        // Restore form and hide printable content after generating PDF
+        formSection.style.display = 'block';
+        proposalContent.style.display = 'none';
+    });
+}
+
+</script>
+
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            margin: 0 0 20px;
+            border-radius: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            justify-content: center;
+
+        }
+
+        .grid-container div {
+            border-radius: 8px;
+            border: 1px black dotted;
+            padding: 20px;
+            background-color: #F5F7F8;
+            text-align: center;
+        }
+
+        .grid-container h2 {
+            margin: 0 0 10px;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .grid-container .button-style {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .grid-container .button-style:hover {
+            background-color: #4CAF50;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive layout for laptop screens (4 columns) */
+        @media (min-width: 1024px) and (max-width: 1500px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Responsive layout for mobile screens (1 column) */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quotation Generator</h1>
+        <div class="grid-container">
+            <div>
+                <h2>Conveyance Deed</h2>
+                <a href="conveyancedeed.html" class="button-style">Generate Quotation</a>
+            </div>
+
+            <div>
+                <h2>Deemed Conveyance</h2>
+                <a href="deemedconveyance.html" class="button-style">Generate Quotation</a>
+            </div>
+
+            <div>
+                <h2>Legal AMC</h2>
+                <a href="legalamc.html" class="button-style">Generate Quotation</a>
+            </div>
+
+            <div>
+                <h2>Maintenance Recovery</h2>
+                <a href="maintenancerecovery.html" class="button-style">Generate Quotation</a>
+            </div>
+
+            <div>
+                <h2>Society Formation with Builder</h2>
+                <a href="Societyformation.html" class="button-style">Generate Quotation</a>
+            </div>
+
+            <div>
+                <h2>Society Formation without Builder</h2>
+                <a href="SocietyformationWOB.html" class="button-style">Generate Quotation</a>
+            </div>
+
+            <div>
+                <h2>DOD SF CD</h2>
+                <a href="DOD_SF_CD.html" class="button-style">Generate Quotation</a>
+            </div>
+
+            <div>
+                <h2>DOD SF DC</h2>
+                <a href="DOD_SF_DC.html" class="button-style">Generate Quotation</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
