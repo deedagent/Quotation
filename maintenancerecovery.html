@@ -423,6 +423,8 @@
     const location = document.getElementById('location').value;
     const dateInput = document.getElementById('date').value;
     const amount = document.getElementById('amount').value;
+    const amount2 = document.getElementById('amount2').value;
+
 
     // Validate input fields
     if (!societyName || !location || !dateInput || !amount) {
@@ -441,6 +443,9 @@
     document.getElementById('societyNameDisplay2').innerText = societyName;
     document.getElementById('locationDisplay2').innerText = location;
     document.getElementById('amountDisplay').innerText = amount;
+    document.getElementById('amountDisplay2').innerText= amount2;
+
+        
 
     // Hide the form and show printable content
     const formSection = document.getElementById('quotationForm');
